@@ -1,0 +1,100 @@
+:root{
+    --Heading:'Varela Round', sans-serif;
+    --FuenteP:'DM Serif Display', serif;
+    --FuentePa: 'Raleway', sans-serif;
+    --white: #fff;
+     --bs-green: #198754; 
+}
+/*Generales*/
+.Principal{
+    margin-top: 150px;
+}
+html{
+    font-size: 62.5%; /*1 rem igual a 10px*/
+}
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: var(--FuentePa);
+    background-color: black
+    
+}
+/*Header*/
+a{
+    text-decoration: none;
+}
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: #000000;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*Reescribir los colores*/
+.boton{
+    background-color: var(--bs-green);
+    font-family: var(--FuentePa);
+}
+.text-primary,
+.opciones{
+ color: var(--bs-green)!important;
+}
+ .maestros{
+    font-family: var(--FuentePa);
+     color: rgb(147, 0, 0) !important;  
+} 
+.nav{
+    background-color: rgba(17, 21, 17, 0.62);
+}
+h1{
+    color: #fff !important;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-family: var(--FuenteP);
+    color: var(--white);
+} 
+p{
+    font-family: var(--FuentePa);
+    color: var(--white);
+}
+.Principal {
+    position: relative;
+    z-index: 1; /* Asegura que la sección Principal esté encima del video */
+    margin-top: 150px; /* Ajusta según sea necesario */
+}
+
+.hero {
+    position: relative;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0; /* Asegura que el video esté detrás de la sección Principal */
+    filter: brightness(0.2);
+}
+@media (max-width: 767px) {
+    .video {
+        z-index: -1; /* Cambia el z-index para que el video esté detrás de la sección Principal en pantallas más pequeñas */
+    }
+}
+.img_1{
+    margin-top: -60px;
+}
+.seccion_2{
+    margin-top: 200px;
+}
+footer{
+    color: rgba(33, 36, 44, 0.64) !important;
+} 
