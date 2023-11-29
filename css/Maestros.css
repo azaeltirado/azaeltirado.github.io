@@ -43,9 +43,13 @@ header{
 .opciones{
  color: var(--bs-green)!important;
 }
- .maestros{
+.navbar-toggler-icon {
+    background-color: rgba(255, 255, 255, 0.775);
+    border: none;
+}
+ h3{
     font-family: var(--FuentePa);
-     color: rgb(147, 0, 0) !important;  
+     color:#fff;
 } 
 .nav{
     background-color: rgba(17, 21, 17, 0.62);
@@ -86,7 +90,14 @@ p{
 }
 @media (max-width: 767px) {
     .video {
-        z-index: -1; /* Cambia el z-index para que el video esté detrás de la sección Principal en pantallas más pequeñas */
+        height: 100vh; /* Hace que el video cubra la página principal en dispositivos más pequeños */
+    }
+    .Principal {
+        margin-top: 30px;
+        height: 100vh; /* Hace que la sección Principal ocupe el 100% de la altura de la ventana en dispositivos más pequeños */
+    }
+    .seccion_2{
+        margin-top: -100px;
     }
 }
 .img_1{
