@@ -6,9 +6,6 @@
      --bs-green: #198754; 
 }
 /*Generales*/
-.Principal{
-    margin-top: 150px;
-}
 html{
     font-size: 62.5%; /*1 rem igual a 10px*/
 }
@@ -33,7 +30,6 @@ header{
 }
 
 
-
 /*Reescribir los colores*/
 .boton{
     background-color: var(--bs-green);
@@ -47,13 +43,16 @@ header{
     background-color: rgba(255, 255, 255, 0.775);
     border: none;
 }
- h3{
-    font-family: var(--FuentePa);
-     color:#fff;
-} 
+ 
 .nav{
     background-color: rgba(17, 21, 17, 0.62);
 }
+/*Demas de lementos */
+h3{
+    font-family: var(--FuentePa);
+     color:#fff;
+} 
+
 h1{
     color: #fff !important;
 }
@@ -68,6 +67,7 @@ p{
     font-family: var(--FuentePa);
     color: var(--white);
 }
+/*Secciones principales*/
 .Principal {
     position: relative;
     z-index: 1; /* Asegura que la sección Principal esté encima del video */
@@ -86,26 +86,37 @@ p{
     left: 0;
     object-fit: cover;
     z-index: 0; /* Asegura que el video esté detrás de la sección Principal */
-    filter: brightness(0.2);
+    filter: brightness(0.2);/*Filtro obscuro del video*/
 }
+/*Media query para la secciones principales y contenido hero*/
 @media (max-width: 767px) {
     .video {
-        height: 100vh; /* Hace que el video cubra la página principal en dispositivos más pequeños */
+        height: 100vh;
     }
     .Principal {
-        margin-top: 30px;
-        height: 100vh; /* Hace que la sección Principal ocupe el 100% de la altura de la ventana en dispositivos más pequeños */
+        margin-top: 270px;
+        height: auto; /* Ajuste de altura automática para dispositivos más pequeños */
     }
-    .seccion_2{
-        margin-top: -100px;
+    .seccion_2, .seccion_3 {
+        margin-top: 0; /* Ajuste del margen para dispositivos más pequeños */
     }
 }
+
 .img_1{
     margin-top: -60px;
 }
 .seccion_2{
     margin-top: 200px;
 }
+.seccion_3{
+    margin-top: 30px;
+}
+.seccion3_p{
+    font-family: var(--FuenteP);
+    font-size: 30px;
+    margin-top: 10px;
+}
+
 footer{
-    color: rgba(33, 36, 44, 0.64) !important;
+    background-color: var(--bs-green);
 } 
