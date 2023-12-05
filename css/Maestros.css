@@ -1,26 +1,29 @@
-:root{
-    --Heading:'Varela Round', sans-serif;
-    --FuenteP:'DM Serif Display', serif;
+:root {
+    --Heading: 'Varela Round', sans-serif;
+    --FuenteP: 'DM Serif Display', serif;
     --FuentePa: 'Raleway', sans-serif;
     --white: #fff;
-     --bs-green: #198754; 
+    --bs-green: #198754;
 }
-/*Generales*/
-html{
-    font-size: 62.5%; /*1 rem igual a 10px*/
+
+/* Generales */
+html {
+    font-size: 62.5%; /* 1 rem igual a 10px */
 }
-body{
+
+body {
     font-size: 1.6rem;
     line-height: 2;
     font-family: var(--FuentePa);
-    background-color: black
-    
+    background-color: black;
 }
-/*Header*/
-a{
+
+/* Header */
+a {
     text-decoration: none;
 }
-header{
+
+header {
     width: 100vw;
     height: 100px;
     background-color: #000000;
@@ -29,49 +32,54 @@ header{
     justify-content: center;
 }
 
-
-/*Reescribir los colores*/
-.boton{
+/* Reescribir los colores */
+.boton {
     background-color: var(--bs-green);
     font-family: var(--FuentePa);
 }
+
 .text-primary,
-.opciones{
- color: var(--bs-green)!important;
+.opciones {
+    color: var(--bs-green) !important;
 }
+
 .navbar-toggler-icon {
     background-color: rgba(255, 255, 255, 0.775);
     border: none;
 }
- 
-.nav{
+
+.nav {
     background-color: rgba(17, 21, 17, 0.62);
 }
-/*Demas de lementos */
-h3{
-    font-family: var(--FuentePa);
-     color:#fff;
-} 
 
-h1{
+/* Demás elementos */
+h3 {
+    font-family: var(--FuentePa);
+    color: #fff;
+}
+
+h1 {
     color: #fff !important;
 }
-h2{
+
+h2 {
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: 3rem;
     font-family: var(--FuenteP);
     color: var(--white);
-} 
-p{
+}
+
+p {
     font-family: var(--FuentePa);
     color: var(--white);
 }
-/*Secciones principales*/
+
+/* Secciones principales */
 .Principal {
     position: relative;
-    z-index: 1; /* Asegura que la sección Principal esté encima del video */
-    margin-top: 150px; /* Ajusta según sea necesario */
+    z-index: 1;
+    margin-top: 150px;
 }
 
 .hero {
@@ -85,46 +93,51 @@ p{
     top: 0;
     left: 0;
     object-fit: cover;
-    z-index: 0; /* Asegura que el video esté detrás de la sección Principal */
-    filter: brightness(0.2);/*Filtro obscuro del video*/
+    z-index: 0;
+    filter: brightness(0.2);
 }
-/*Media query para la secciones principales y contenido hero*/
+
+/* Media query para las secciones principales y contenido hero */
 @media (max-width: 767px) {
     .video {
-        height: 100vh; /* Hace que el video cubra la página principal en dispositivos más pequeños */
+        height: 100vh;
     }
     .Principal {
         margin-top: 30px;
-        height: 100vh; /* Hace que la sección Principal ocupe el 100% de la altura de la ventana en dispositivos más pequeños */
+        height: 100vh;
     }
-    .Principal h2{
-        margin-top: 150px;
-    }
-    .seccion_2 h2{
-        margin-top: -200px;
-    }
-    .seccion_2{
-        margin-top: 100px; /*Al momento de que este en dispositivos pequeños la seccion de imagenes se recoree 100px */
-    }
-    .seccion_3{
-        margin-top: 100px; /*Al momento de que este en dispositivos pequeños la seccion de imagenes se recoree 100px */
+    .Principal h2 {
+        margin-top: 20px;
+        font-size: 2rem;
     }
 }
-.img_1{
+
+.seccion_2 {
+    margin-top: 100px;
+}
+
+.seccion_3 {
+    margin-top: 100px;
+}
+
+.img_1 {
     margin-top: -60px;
 }
-.seccion_2{
+
+.seccion_2 {
     margin-top: 200px;
 }
-.seccion_3{
+
+.seccion_3 {
     margin-top: 30px;
 }
-.seccion3_p{
+
+.seccion3_p {
     font-family: var(--FuenteP);
     font-size: 30px;
     margin-top: 10px;
 }
 
-footer{
+footer {
     background-color: var(--bs-green);
-} 
+}
