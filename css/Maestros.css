@@ -57,7 +57,7 @@ h1{
     color: #fff !important;
 }
 h2{
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     font-size: 3rem;
     font-family: var(--FuenteP);
@@ -91,17 +91,25 @@ p{
 /*Media query para la secciones principales y contenido hero*/
 @media (max-width: 767px) {
     .video {
-        height: 100vh;
+        height: 100vh; /* Hace que el video cubra la página principal en dispositivos más pequeños */
     }
     .Principal {
-        margin-top: 270px;
-        height: auto; /* Ajuste de altura automática para dispositivos más pequeños */
+        margin-top: 30px;
+        height: 100vh; /* Hace que la sección Principal ocupe el 100% de la altura de la ventana en dispositivos más pequeños */
     }
-    .seccion_2, .seccion_3 {
-        margin-top: 0; /* Ajuste del margen para dispositivos más pequeños */
+    .Principal h2{
+        margin-top: 150px;
+    }
+    .seccion_2 h2{
+        margin-top: -200px;
+    }
+    .seccion_2{
+        margin-top: 100px; /*Al momento de que este en dispositivos pequeños la seccion de imagenes se recoree 100px */
+    }
+    .seccion_3{
+        margin-top: 100px; /*Al momento de que este en dispositivos pequeños la seccion de imagenes se recoree 100px */
     }
 }
-
 .img_1{
     margin-top: -60px;
 }
