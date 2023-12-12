@@ -1,0 +1,80 @@
+
+:root {
+    --Heading: 'Varela Round', sans-serif;
+    --FuenteP: 'DM Serif Display', serif;
+    --FuentePa: 'Raleway', sans-serif;
+    --white: #fff;
+    --bs-green: #198754;
+    --Green2:#5bff92;
+    --Green3:#00d06f;
+}
+
+/* Generales */
+html {
+    font-size: 62.5%; /* 1 rem igual a 10px */
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: var(--FuentePa);
+    color: var(--white);
+    background-color: black;
+}
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: #000000;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: var(--bs-green)!important;
+}
+h2{
+    color: var(--Green3);
+}
+.Seccion_1 h2{
+    margin-top: 3rem;
+}
+.Seccion_1 img{
+    height: 40rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.Seccion_2 h2{
+    margin-top: -4rem;
+}
+.Seccion_2 img{
+    padding: 1rem;
+    margin-top: -10rem;
+    height: 40rem;
+    border-radius: 2rem;
+}
+.Seccion_3 h2{
+    margin-top: 6rem;
+}
+.Seccion_3 img{
+    height: 40rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .Seccion_2 h2{
+     margin-top: 3rem;
+    }
+ }
+ @media (max-width: 768px) {
+    .Seccion_3 h2{
+     margin-top: 1rem;
+    }
+ }
+ @media (min-width: 992px) {
+    .Seccion_2 h2{
+        margin-top: -4rem;
+       }
+}
+ footer {
+    background-color: var(--bs-green);
+}

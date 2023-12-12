@@ -1,0 +1,79 @@
+:root {
+    --Heading: 'Varela Round', sans-serif;
+    --FuenteP: 'DM Serif Display', serif;
+    --FuentePa: 'Raleway', sans-serif;
+    --white: #fff;
+    --bs-green: #198754;
+    --Green2:#5bff92;
+    --Green3:#00d06f;
+}
+
+/* Generales */
+html {
+    font-size: 62.5%; /* 1 rem igual a 10px */
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: var(--FuentePa);
+    color: var(--white);
+    background-color: black;
+}
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: #000000;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: var(--white)!important;
+}
+
+.titulo{
+    color: var(--bs-green)!important;
+}
+
+ h3{
+    font-family:var(--FuentePa);
+    color: var(--Green2) !important;
+    margin-bottom: 2rem;
+}
+.Seccion_1 img{
+    border-radius: 2rem;
+}
+.Seccion_1 span{
+    color: var(--Green3);
+}
+.Seccion_1 p{
+    margin-top: 4rem;
+}
+.Seccion_2 img{
+    height: 42rem;
+    margin-left: 5.5rem;
+    border-radius: 2rem;
+}
+.Seccion_2 span{
+    color: var(--Green3);
+}
+.Seccion_2 p{
+    margin-top: 4rem;
+}
+@media (max-width: 768px) {
+   .Seccion_2 img{
+    margin:  0;
+   }
+}
+@media (min-width: 992px) {
+    .Seccion_1 img{
+        margin-top: 4rem;
+    }
+    .Seccion_2 img{
+        margin-top: 5rem;
+       }
+}
+footer {
+    background-color: var(--bs-green);
+}
